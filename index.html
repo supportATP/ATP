@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Picking - Solutions de picking innovantes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-orange-atelier {
+            background-color: #F15A24;
+        }
+        .text-orange-atelier {
+            color: #F15A24;
+        }
+        .border-orange-atelier {
+            border-color: #F15A24;
+        }
+        .bg-blue-atelier {
+            background-color: #005B82;
+        }
+        .text-blue-atelier {
+            color: #005B82;
+        }
+        .hover-bg-orange:hover {
+            background-color: #E04E1A;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #F15A24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://atelier-picking.com/wp-content/uploads/2022/02/logo-atelier-picking.png" alt="Atelier Picking Logo" class="h-12">
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#accueil" class="nav-link text-blue-atelier font-medium">Accueil</a>
+                <a href="#expertise" class="nav-link text-gray-600 hover:text-blue-atelier">Notre expertise</a>
+                <a href="#solutions" class="nav-link text-gray-600 hover:text-blue-atelier">Nos solutions</a>
+                <a href="#references" class="nav-link text-gray-600 hover:text-blue-atelier">Nos références</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-blue-atelier">Contact</a>
+            </nav>
+            
+            <div class="md:hidden">
+                <button class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="bg-blue-atelier text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold mb-6">Optimisez vos opérations de picking</h1>
+                <p class="text-lg mb-8 opacity-90">Atelier Picking conçoit et intègre des solutions innovantes pour améliorer la productivité de vos préparations de commandes.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-orange-atelier text-white font-bold py-3 px-6 rounded hover-bg-orange transition duration-300 text-center">Demander un devis</a>
+                    <a href="#solutions" class="border-2 border-white text-white font-bold py-3 px-6 rounded hover:bg-white hover:bg-opacity-10 transition duration-300 text-center">Découvrir nos solutions</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://atelier-picking.com/wp-content/uploads/2022/02/visuel-header.png" alt="Solutions de picking" class="max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-blue-atelier">Notre expertise</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Spécialistes des solutions de picking depuis plus de 15 ans</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="bg-blue-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-blue-atelier text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-atelier">Conseil</h3>
+                    <p class="text-gray-600">Analyse de vos processus et recommandations pour optimiser vos opérations de picking.</p>
+                </div>
+                
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="bg-orange-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-orange-atelier text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-atelier">Intégration</h3>
+                    <p class="text-gray-600">Déploiement de solutions sur mesure adaptées à vos besoins spécifiques.</p>
+                </div>
+                
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-atelier">Support</h3>
+                    <p class="text-gray-600">Accompagnement et maintenance pour garantir le bon fonctionnement de vos équipements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-blue-atelier">Nos solutions</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Des technologies innovantes pour améliorer votre productivité</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/icon-pick-to-light.png" alt="Pick-to-Light" class="h-16 mb-4 mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-center text-blue-atelier">Pick-to-Light</h3>
+                    <p class="text-gray-600 text-center">Système visuel guidant les opérateurs vers les emplacements et indiquant les quantités à prélever.</p>
+                </div>
+                
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/icon-voice-picking.png" alt="Voice Picking" class="h-16 mb-4 mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-center text-blue-atelier">Voice Picking</h3>
+                    <p class="text-gray-600 text-center">Solution vocale permettant une préparation de commandes mains-libres.</p>
+                </div>
+                
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/icon-rfid.png" alt="RFID" class="h-16 mb-4 mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-center text-blue-atelier">RFID</h3>
+                    <p class="text-gray-600 text-center">Technologie sans contact pour le suivi et la traçabilité des marchandises.</p>
+                </div>
+                
+                <div class="service-card bg-white p-6 rounded-lg border border-gray-200 transition duration-300">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/icon-mobile.png" alt="Solutions mobiles" class="h-16 mb-4 mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-center text-blue-atelier">Solutions mobiles</h3>
+                    <p class="text-gray-600 text-center">Applications dédiées aux opérations logistiques sur terminaux mobiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-blue-atelier">Nos références</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Ils nous ont fait confiance pour optimiser leurs opérations</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex justify-center">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/logo-carrefour.png" alt="Carrefour" class="h-16 object-contain opacity-70 hover:opacity-100 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/logo-decathlon.png" alt="Decathlon" class="h-16 object-contain opacity-70 hover:opacity-100 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/logo-leroy-merlin.png" alt="Leroy Merlin" class="h-16 object-contain opacity-70 hover:opacity-100 transition">
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/logo-fnac.png" alt="Fnac" class="h-16 object-contain opacity-70 hover:opacity-100 transition">
+                </div>
+            </div>
+            
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"La solution Pick-to-Light a permis d'augmenter notre productivité de 30% tout en réduisant les erreurs de picking."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">Jean Dupont</h4>
+                            <p class="text-gray-500 text-sm">Responsable logistique</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"L'équipe d'Atelier Picking a su comprendre nos besoins et proposer une solution parfaitement adaptée à notre activité."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">Marie Lambert</h4>
+                            <p class="text-gray-500 text-sm">Directrice d'entrepôt</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Le support technique réactif et compétent a été un vrai plus dans notre collaboration avec Atelier Picking."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">Thomas Martin</h4>
+                            <p class="text-gray-500 text-sm">Responsable supply chain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-orange-atelier text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Vous souhaitez optimiser vos opérations de picking ?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Nos experts sont à votre disposition pour étudier votre projet.</p>
+            <a href="#contact" class="bg-white text-orange-atelier font-bold py-3 px-8 rounded hover-bg-orange transition duration-300 inline-block">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-blue-atelier">Contact</h2>
+                    <p class="text-gray-600 mb-8">Pour toute demande d'information ou de devis, n'hésitez pas à nous contacter.</p>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-50 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-atelier"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-blue-atelier">Adresse</h3>
+                                <p class="text-gray-600">12 rue de la Michodière<br>75002 Paris, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-orange-50 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-orange-atelier"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-blue-atelier">Téléphone</h3>
+                                <p class="text-gray-600">+33 1 42 86 80 86</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-50 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-blue-atelier">Email</h3>
+                                <p class="text-gray-600">contact@atelier-picking.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nom complet*</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-atelier">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email*</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-atelier">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-atelier">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message*</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-atelier"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-orange-atelier text-white font-bold py-3 px-6 rounded hover-bg-orange transition duration-300">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-atelier text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="https://atelier-picking.com/wp-content/uploads/2022/02/logo-atelier-picking.png" alt="Atelier Picking Logo" class="h-12 mb-4">
+                    <p class="text-gray-300">Solutions innovantes pour optimiser vos opérations de picking et de préparation de commandes.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Solutions</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Pick-to-Light</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Voice Picking</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">RFID</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Solutions mobiles</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Entreprise</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Notre expertise</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Nos références</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Actualités</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Recrutement</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">12 rue de la Michodière</li>
+                        <li class="text-gray-300">75002 Paris, France</li>
+                        <li class="text-gray-300">+33 1 42 86 80 86</li>
+                        <li class="text-gray-300">contact@atelier-picking.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-blue-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">© 2023 Atelier Picking. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition">Mentions légales</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">Politique de confidentialité</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle (would be enhanced in a real implementation)
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            alert("Menu mobile serait implémenté ici dans une version complète");
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=supportATP/site-atp" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
